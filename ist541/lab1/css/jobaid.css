@@ -2,9 +2,9 @@
 /* All comments go between the front slash and asterisk symbols */
 
 body {
-	background-color:#D7B9B9;   /* background color */
+	background-color:#D4EFDF;   /* background color */
 	color: #444;          /* text color for the entire page */
-	font-size: 12px;
+	font-size: 14px;
 	font-family: Segoe, sans-serif;
 }
 
@@ -23,7 +23,7 @@ h1, h2 {
 	padding:8px;
 	text-align:left;
 	font-size:16px;
-	background-color:#F7B857;
+	background-color:#7FB3D5;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 	box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
@@ -37,6 +37,7 @@ h1, h2 {
 	justify-content: center;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
+	box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
 
 	
 }
