@@ -51,7 +51,20 @@ h1, h2 {
 	width:40%;	
 	padding:5px;
 	text-align: center;
+	
 }
+
+.warning {
+		background-color: #FCF3CF;
+		padding:10px;
+		border-radius:20px;
+	}
+
+.material-icons {
+	color:green; 
+	font-size:1em;
+}
+
 img { 
 border-radius: 20px;
 box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
