@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>lab5_question1</title>
+<link href="css/styles.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="wrapper"><br>
+  <h1>Practice 1: Is this Spanish moss or lace lichen?</h1>
+  <h2 id="hint">Hint: Hover over the image below to find out!</h2>
+  <img onmouseenter="showAnswer()" id="lichen"  src="img/lace_lichen.jpg"   /> 
+  <img onmouseleave="hideAnswer()" id="lichen_closeup" src="img/lichen_closeup.jpg" />
+  <div id="answer"></div>
+  <!-- This is a placeholder to display here the answer--> 
+  <br><br>
+	    <a href="practice2.html"> Go to Practice 2</a> 
+</div>
+<!-- closing  “wrapper” --> 
+<script>
+ function showAnswer() {
+	   $("#lichen").hide();
+	   $("#lichen_closeup").show();
+	   $("#answer").html("<h2 style='color:green'>It is lace lichen, the state lichen of California. <br>(California is the only state that has a state lichen.)</h3>");
+	}
+
+function hideAnswer() {
+	   $("#lichen").show();
+	   $("#lichen_closeup").hide();
+	   $("#answer").html("");
+	}
+</script>
+
+</body>
+</html>

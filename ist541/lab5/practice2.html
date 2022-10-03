@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>lab5</title>
+<link href="css/styles.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="wrapper"> <br>
+    <h1> Practice 2: Name This Plant</h1>
+<br><br>
+  <img src="img/sticky_monkey.jpg" /><br />
+        <h3>&nbsp; &nbsp; What is this? (Click your choice.)</h3>
+  <h3 onclick="wrongAnswer1()" class="choices"> &nbsp; &nbsp; &nbsp; &nbsp; a. coastal trumpet flower </h3>
+  <h3 onclick="wrongAnswer2()" class="choices"> &nbsp; &nbsp; &nbsp; &nbsp; b. upright chamomile </h3>
+  <h3 onclick="rightAnswer()" class="choices">  &nbsp; &nbsp; &nbsp; &nbsp; c. sticky monkey flower </h3>
+  <div id="feedback"></div>
+  <img id="flowerface" src="img/flowerface.jpg" />
+		  <br><br><br>
+		  <br />
+	    <a href="index.html"> Back to Practice 1</a> 
+
+<script>
+  
+	  function wrongAnswer1(){
+		 $("#feedback").html("<h2 style='color:orange'> Not a bad guess, but incorrect. </h2>");
+		 $("#flowerface").hide();
+	  }
+	  function wrongAnswer2(){
+		 $("#feedback").html("<h2 style='color:orange'> Try again. This is not chamomile. </h2>");
+         $("#flowerface").hide();
+      }
+	  function rightAnswer(){
+         $("#feedback").html("<h2 style='color:green'> Correct! This plant grows in the pine forest and coastal brush of Point Lobos.</h2>");
+         $("#flowerface").show();
+      }
+
+   </script>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+</body>
+</html>
