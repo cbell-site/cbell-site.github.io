@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Teacher Kit for Point Lobos</title>
+<link href="css/styles.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+	
+<div id="wrapper"><br>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link href="css/jobaid.css" rel="stylesheet">
+<link href="css/lab3.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1> Teacher Kit for Point Lobos Visits </h1>
+	<a href="index.html"> Starting Guidelines</a> 
+	<a href="page2.html"> School Walk Tips</a> 
+	<a href="page3.html"> Routes and Stops</a> 
+	<br><br><br><br>
+	<a href="page4.html"> Marine Mammals</a> 
+	<a href="page5.html"> Plants, Lichen, Algae</a> 
+	<a href="page6.html"> Rocks</a>
+	<a href="page7.html"> Test Yourself!</a> <br>
+<br><br><br>
+<h2>Practice 1: Is this Spanish moss or lace lichen?</h2>
+  <h2 id="hint">(Hint: Hover over the image below to find out!)</h2>
+  <img onmouseenter="showAnswer()" id="lichen"  src="img/lace_lichen.jpg"   /> 
+  <img onmouseleave="hideAnswer()" id="lichen_closeup" src="img/lichen_closeup.jpg" />
+  <div id="answer"></div>
+  <!-- This is a placeholder to display here the answer--> 
+	
+  <br><br>
+
+</div>
+<!-- closing  “wrapper” --> 
+<script>
+ function showAnswer() {
+	   $("#lichen").hide();
+	   $("#lichen_closeup").show();
+	   $("#answer").html("<h2 style='color:green'>It is lace lichen, the state lichen of California. <br>(California is the only state that has a state lichen.)</h3>");
+	}
+
+function hideAnswer() {
+	   $("#lichen").show();
+	   $("#lichen_closeup").hide();
+	   $("#answer").html("");
+	}
+</script>
+	
+	
+	
+<div id="wrapper"> <br>
+    <h2> Practice 2: Sea lion or harbor seal?</h2>
+<br>
+  <img src="img/harbor_seals.jpg" /><br />
+        <h3>&nbsp; &nbsp; What are these? (Click your choice.)</h3>
+  <h3 onclick="wrongAnswer1()" class="choices"> &nbsp; &nbsp; &nbsp; &nbsp; a. sea lions </h3>
+  <h3 onclick="rightAnswer()" class="choices">  &nbsp; &nbsp; &nbsp; &nbsp; b. harbor seals </h3>
+  <div id="feedback"></div>
+  <img id="flowerface" src="img/flowerface.jpg" />
+		  <br><br><br>
+
+
+<script>
+  
+	  function wrongAnswer1(){
+		 $("#feedback").html("<h2 style='color:orange'> No, try again. Review the Marine Mammals page if needed. </h2>");
+	  }
+	  function rightAnswer(){
+         $("#feedback").html("<h2 style='color:green'> Correct! This is a harbor seal mother and baby on a beach of Point Lobos. <br>(Sea lion mothers give birth in the Channel Islands.)</h2>");
+      }
+
+   </script>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+</body>
+</html>
